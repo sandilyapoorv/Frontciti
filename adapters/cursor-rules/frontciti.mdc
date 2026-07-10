@@ -1,0 +1,23 @@
+---
+description: Use Frontciti for frontend UI, UX, redesign, dashboards, SaaS screens, landing pages, components, accessibility, responsive polish, UX copy, design systems, and GSAP motion.
+globs:
+  - "**/*.{ts,tsx,js,jsx,css,scss,html,md,mdx,vue,svelte,astro}"
+alwaysApply: false
+---
+
+# Frontciti
+
+For matching frontend work, read:
+
+`frontciti-skill/skills/frontciti/SKILL.md`
+
+Follow the command router in the skill. If the user says `/frontciti landing`, `/frontciti saas`, `/frontciti dashboard`, `/frontciti redesign`, `/frontciti critique`, `/frontciti polish`, `/frontciti animate`, or another Frontciti command, load that command file.
+
+Load only relevant references under `frontciti-skill/skills/frontciti/references/`.
+
+Before finishing frontend work:
+
+- Check brand vs product register.
+- Preserve existing stack and conventions.
+- Verify hierarchy, spacing, typography, color, responsive behavior, accessibility, states, copy, performance, and reduced-motion behavior.
+- Avoid generic AI design patterns, fake content, and decorative motion that does not support the task.

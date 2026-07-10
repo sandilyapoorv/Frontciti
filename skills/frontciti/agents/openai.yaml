@@ -1,0 +1,4 @@
+interface:
+  display_name: "Frontciti"
+  short_description: "Frontend design, product UI, critique, and motion"
+  default_prompt: "Use $frontciti to shape, build, critique, polish, harden, or animate a frontend interface with strong UX and responsive production quality."
