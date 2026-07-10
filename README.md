@@ -8,6 +8,66 @@ Frontciti is a frontend design, redesign, SaaS UI, dashboard, component, and mot
 
 It helps coding agents produce frontend work with stronger taste, better UX, cleaner design systems, accessibility, responsive behavior, and purposeful animation.
 
+## Install
+
+### Codex
+
+```bash
+tmp="$(mktemp -d)"
+git clone --depth 1 https://github.com/sandilyapoorv/Frontciti.git "$tmp/frontciti"
+mkdir -p "${CODEX_HOME:-$HOME/.codex}/skills"
+rm -rf "${CODEX_HOME:-$HOME/.codex}/skills/frontciti"
+cp -R "$tmp/frontciti/skills/frontciti" "${CODEX_HOME:-$HOME/.codex}/skills/frontciti"
+```
+
+Then start a new Codex thread and ask for `$frontciti`, for example:
+
+```txt
+Use $frontciti to redesign this dashboard with stronger hierarchy, responsive states, and production polish.
+```
+
+### Claude Code
+
+```bash
+tmp="$(mktemp -d)"
+git clone --depth 1 https://github.com/sandilyapoorv/Frontciti.git "$tmp/frontciti"
+mkdir -p "$HOME/.claude/skills"
+rm -rf "$HOME/.claude/skills/frontciti"
+cp -R "$tmp/frontciti/skills/frontciti" "$HOME/.claude/skills/frontciti"
+```
+
+### Cursor
+
+From your project root:
+
+```bash
+tmp="$(mktemp -d)"
+git clone --depth 1 https://github.com/sandilyapoorv/Frontciti.git "$tmp/frontciti"
+mkdir -p .cursor/rules
+cp "$tmp/frontciti/adapters/cursor-rules/frontciti.mdc" .cursor/rules/frontciti.mdc
+```
+
+### VS Code / Copilot-Style Agents
+
+From your project root:
+
+```bash
+tmp="$(mktemp -d)"
+git clone --depth 1 https://github.com/sandilyapoorv/Frontciti.git "$tmp/frontciti"
+mkdir -p .github
+cp "$tmp/frontciti/adapters/copilot-instructions.md" .github/copilot-instructions.md
+```
+
+### Generic Agent Instructions
+
+For tools that read `AGENTS.md` from a project root:
+
+```bash
+tmp="$(mktemp -d)"
+git clone --depth 1 https://github.com/sandilyapoorv/Frontciti.git "$tmp/frontciti"
+cp "$tmp/frontciti/adapters/AGENTS.md" AGENTS.md
+```
+
 ## Compatibility
 
 Frontciti is packaged as an agent skill and includes adapters for tools that use project rules instead of native skills.
